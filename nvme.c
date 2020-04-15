@@ -4880,6 +4880,7 @@ static int submit_io(int opcode, char *command, const char *desc,
 	}
 
 	if (cfg.show) {
+	    printf("fd           : %d\n", fd);
 		printf("opcode       : %02x\n", opcode);
 		printf("flags        : %02x\n", 0);
 		printf("control      : %04x\n", control);
